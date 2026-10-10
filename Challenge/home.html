@@ -1,63 +1,68 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pulse Fitness Studio</title>
 </head>
 <body>
 
-  <div class="header">
-    <div class="nav">
+  <header>
+     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
-  </div>
+     </nav>
+  </header> 
 
   <h1>Pulse Fitness Studio</h1>
   <p>Train hard. Recover smart. Feel unstoppable.</p>
 
-  <div onclick="alert('booking coming soon')">Book Now</div>
+  <div onclick="alert('booking coming soon')"><button>Book Now</button></div>
 
   <section id="services">
-    <h2>Our Services</h2>
+  <h2>Our Services</h2>
 
+  <ul>
     <li>Personal Training</li>
     <li>Group Classes</li>
     <li>Nutrition Coaching</li>
-
+  </ul>
     <img src="images/gym-floor.jpg">
 
     <h4>Why choose us?</h4>
-    <p>We combine expert coaching with a supportive community to help you reach your goals.
-  </div>
+    <p>We combine expert coaching with a supportive community to help you reach your goals.</p>
+    </section>
 
   <section id="about">
     <h2>About Pulse Fitness</h2>
     <img src="images/trainer.jpg" alt="image1">
     <p>Founded in 2019, Pulse Fitness Studio has helped hundreds of members build strength,
     confidence and healthy habits that last.</p>
-    <a href="contact.html">Click here</a>
+    <a href="contact.html"><button>Click here</button></a>
   </section>
 
-  <h1>Get In Touch</h1>
+ 
 
   <section id="contact">
     <h2>Contact Us</h2>
     <form action="#" method="post">
       <div>
-        <input placeholder="Your name" />
+         <label for="Name">Name:</label>
+        <input id="Name" placeholder="Your name" /><br><br>
       </div>
       <div>
-        <label for="email-address">Email address</label>
-        <input id="email" name="email" type="email" />
+        <label for="email-address">Email address:</label>
+        <input id="email-address" name="email" type="email" /><br><br>
       </div>
       <div>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5"></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea><br><br>
       </div>
-      <a href="#">Submit</a>
+      <a href="#" style="display: flex;  margin-left: 80px; text-decoration: none;"><button>Submit</button></a>
     </form>
   </section>
 

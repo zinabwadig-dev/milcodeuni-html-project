@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact </title>
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="header">
+      <div class="logotitle">
+         <img id="logo" src="src/logo.png" alt="Logo">
+         <link rel="stylesheet" href="styles.css">
       <h1>Milcodeuni</h1>
+      </div>
+
       <ul>
         <li>
           <a href="#">Home</a>
@@ -28,26 +34,26 @@
 
       <!-- Form -->
       <form>
-        <di>
+        <div>
           <label for="name">full name *:</label>
           <input type="text" id="name" required />
-        </di>
+        </div><br />
 
-        <di>
+        <div>
           <label for="email"> email *:</label>
           <input type="email" id="email" required />
-        </di>
+        </div><br />
 
-        <di>
+        <div>
           <label for="message">Select:</label>
           <select id="message">
             <option value="question">Question</option>
             <option value="feedback">Feedback</option>
             <option value="complaint">Complaint</option>
           </select>
-        </di>
+        </div>
 
-        <di>
+        <div>
           <label for="context">How did you hear about us?</label>
           <input
             type="radio"
@@ -56,12 +62,12 @@
             name="context"
           />
           Social Media
-        </di>
+        </div>
 
-        <di>
+        <div>
           <label for="check">your agreement</label>
           <input type="checkbox" id="check" value="social media" name="check" />
-        </di>
+        </div>
 
         <input type="submit" />
       </form>
